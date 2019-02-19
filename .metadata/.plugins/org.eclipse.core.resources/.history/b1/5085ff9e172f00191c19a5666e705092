@@ -1,0 +1,34 @@
+package com.jacob.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Service;
+
+import com.jacob.demo.dao.BlogDao;
+import com.jacob.demo.model.Blog;
+
+@Service("blogService")
+public class BlogService {
+	
+	@Autowired
+	private BlogDao blogDao;	
+	
+	 	public void saveBlog(Blog blog) {
+	 		try {
+	 			blogDao.saveBlog(blog);
+	 		} catch {
+	 			System.out.println("We have filed you");
+	 		} finally {
+	 			System.out.println("We have filed you");
+
+	 		}
+	    }
+	    
+	    public List<Blog> getAllBlogs() {
+	    	return blogDao.getAllBlogs();
+	    }
+
+}

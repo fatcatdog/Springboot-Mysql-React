@@ -1,0 +1,2 @@
+INDEX VERSION 1.130+/Users/jacob/Desktop/stamford3/.metadata/.plugins/org.eclipse.jdt.core
+739386517.index

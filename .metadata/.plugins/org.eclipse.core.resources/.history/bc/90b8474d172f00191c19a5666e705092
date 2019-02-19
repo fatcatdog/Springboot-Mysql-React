@@ -1,0 +1,8 @@
+package com.jacob.demo.service;
+
+@Service("blogService")
+public class BlogService {
+	
+	
+
+}

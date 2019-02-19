@@ -1,0 +1,12 @@
+package com.example.demo.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.example.demo.model.audit.UserDateAudit;
+
+@Entity
+@Table(name = "blogs")
+public class Blog extends UserDateAudit {
+
+}

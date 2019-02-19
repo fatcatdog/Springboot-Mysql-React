@@ -1,0 +1,14 @@
+package com.jacob.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("blogService")
+public class BlogService {
+	
+	@Autowired
+	private BlogDao blogDao;	
+
+}
